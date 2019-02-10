@@ -14,9 +14,9 @@ cd ./ros_setup_scripts_Ubuntu16.04_server
 bash ./step1.bash
 
 #catkin setup
-mkdir -p /home/ubuntu/catkin_ws/src
-cd /home/ubuntu/catkin_ws/src
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
 source /opt/ros/kinetic/setup.bash
 catkin_init_workspace
-cd /home/ubuntu/catkin_ws
+cd ~/catkin_ws
 catkin_make

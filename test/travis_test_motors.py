@@ -69,7 +69,7 @@ class MotorTest(unittest.TestCase):
 			data = f.readline()
 			self.assertEqual(data, "1\n","wrong value in rtmotor0 at motor on")
 
-	def test_put_value_timed(self)
+	def test_put_value_timed(self):
 		tm = rospy.ServiceProxy('/timed_motion',TimedMotion)
 		tm(-321,654,1500)
 		with open("/dev/rtmotor0","r") as f:
